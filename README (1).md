@@ -52,7 +52,8 @@ Correr el programa:
 python main.py
 ```
 
-<!-- FOTO: captura de la terminal en Windows mostrando la salida del programa -->
+
+
 
 ### Linux
 
@@ -68,7 +69,7 @@ Correr el programa:
 python3 main.py
 ```
 
-<!-- FOTO: captura de la terminal en Linux mostrando la salida del programa -->
+
 
 ### MacOS
 
@@ -84,7 +85,7 @@ Correr el programa:
 python3 main.py
 ```
 
-<!-- FOTO: captura de la terminal en MacOS mostrando la salida del programa -->
+
 
 > En los tres sistemas el programa imprime los resultados directamente en consola. No crea carpetas ni archivos adicionales.
 
@@ -138,33 +139,10 @@ D  →  seis  |  ε
 
 Cuando se corre `main.py` la consola muestra algo así:
 
-```
-============================================================
-  GRAMÁTICA 1
-============================================================
 
-📌 Producciones:
-   S → A uno B C
-   S → S dos
-   ...
+<img width="817" height="648" alt="image" src="https://github.com/user-attachments/assets/29ddffdc-ae10-4fad-838c-3fcfd1e0af81" />
 
-📗 PRIMEROS:
-   PRIMEROS(A) = { cinco, cuatro, seis, tres, ε }
-   PRIMEROS(B) = { cuatro, seis, ε }
-   ...
-
-📘 SIGUIENTES:
-   SIGUIENTES(A) = { tres, uno }
-   SIGUIENTES(B) = { $, cinco, dos, seis, tres, uno }
-   ...
-
-📕 PREDICCIÓN:
-   PRED(S → A uno B C) = { cinco, cuatro, seis, tres, uno }
-   PRED(A → ε) = { tres, uno }
-   ...
-```
-
-<!-- FOTO: captura de la consola mostrando la salida completa de las dos gramáticas -->
+<img width="592" height="347" alt="image" src="https://github.com/user-attachments/assets/dcea50f7-66dd-4ca4-aee6-498fd5bd1618" />
 
 ---
 
@@ -180,7 +158,8 @@ Cuando se corre `main.py` la consola muestra algo así:
 | C | { cinco, ε } |
 | D | { seis, ε } |
 
-<!-- FOTO: captura o imagen con la tabla de PRIMEROS de la Gramática 1 -->
+<img width="552" height="165" alt="image" src="https://github.com/user-attachments/assets/3ba2fb52-8579-4e22-a97a-cf81a813bc3c" />
+
 
 ### Gramática 1 — SIGUIENTES
 
@@ -192,7 +171,8 @@ Cuando se corre `main.py` la consola muestra algo así:
 | C | { $, uno, dos, tres, seis } |
 | D | { $, uno, dos, tres, cuatro, seis } |
 
-<!-- FOTO: captura o imagen con la tabla de SIGUIENTES de la Gramática 1 -->
+<img width="511" height="147" alt="image" src="https://github.com/user-attachments/assets/bb9809ce-43a0-4c7f-a3de-3e98ecb20049" />
+
 
 ### Gramática 2 — PRIMEROS
 
