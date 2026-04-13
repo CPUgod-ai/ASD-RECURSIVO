@@ -4,7 +4,7 @@
 
 En este taller se construye un programa en Python que recibe una gramática libre de contexto y calcula automáticamente los conjuntos de **PRIMEROS**, **SIGUIENTES** y **PREDICCIÓN** de todos sus no terminales y reglas de producción.
 
-El programa está organizado en cuatro archivos separados: uno con la lógica principal de los algoritmos, dos con la definición de cada gramática y uno como punto de entrada. No se necesitan librerías externas, todo corre con Python puro.
+El programa está organizado en cuatro archivos separados: uno con la lógica principal de los algoritmos, dos con la definición de cada gramática y uno como punto de entrada.
 
 ---
 
@@ -150,53 +150,27 @@ Cuando se corre `main.py` la consola muestra algo así:
 
 ### Gramática 1 — PRIMEROS
 
-| No terminal | PRIMEROS |
-|-------------|----------|
-| S | { uno, dos, tres, cuatro, cinco, seis } |
-| A | { cuatro, cinco, seis, tres, ε } |
-| B | { cuatro, seis, ε } |
-| C | { cinco, ε } |
-| D | { seis, ε } |
-
 <img width="552" height="165" alt="image" src="https://github.com/user-attachments/assets/3ba2fb52-8579-4e22-a97a-cf81a813bc3c" />
 
 
 ### Gramática 1 — SIGUIENTES
 
-| No terminal | SIGUIENTES |
-|-------------|------------|
-| S | { $, dos } |
-| A | { uno, tres } |
-| B | { $, uno, dos, tres, cinco, seis } |
-| C | { $, uno, dos, tres, seis } |
-| D | { $, uno, dos, tres, cuatro, seis } |
-
 <img width="511" height="147" alt="image" src="https://github.com/user-attachments/assets/bb9809ce-43a0-4c7f-a3de-3e98ecb20049" />
 
+### Gramática 1 — PREDICIONES
+<img width="568" height="288" alt="image" src="https://github.com/user-attachments/assets/62fe225b-db7b-4830-b473-e6204ece6530" />
 
 ### Gramática 2 — PRIMEROS
 
-| No terminal | PRIMEROS |
-|-------------|----------|
-| S | { uno, dos, tres, cuatro, cinco } |
-| A | { dos, ε } |
-| B | { tres, cuatro, cinco, ε } |
-| C | { cuatro, cinco } |
-| D | { seis, ε } |
+<img width="482" height="152" alt="image" src="https://github.com/user-attachments/assets/a13c26d4-8e34-4eed-a773-cc9771744648" />
 
-<!-- FOTO: captura o imagen con la tabla de PRIMEROS de la Gramática 2 -->
 
 ### Gramática 2 — SIGUIENTES
 
-| No terminal | SIGUIENTES |
-|-------------|------------|
-| S | { $ } |
-| A | { uno, tres, cuatro, cinco, seis } |
-| B | { uno, tres, cuatro, cinco, seis } |
-| C | { uno, tres, cuatro, cinco, seis } |
-| D | { uno, tres, cuatro, cinco, seis } |
+<img width="497" height="143" alt="image" src="https://github.com/user-attachments/assets/394a2477-640b-44ee-94b6-19d3b6c3eb4c" />
 
-<!-- FOTO: captura o imagen con la tabla de SIGUIENTES de la Gramática 2 -->
+### Gramática 2 — PREDICCIONES
+<img width="553" height="253" alt="image" src="https://github.com/user-attachments/assets/8b431898-9aa5-48bf-b8f7-291ddffc6fdf" />
 
 ---
 
